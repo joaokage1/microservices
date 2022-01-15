@@ -2,3 +2,7 @@
 /customer/target/
 /fraud/target/
 /.idea/
+/customer/customer.iml
+/fraud/fraud.iml
+/microservices.iml
+/eureka-server/eureka-server.iml

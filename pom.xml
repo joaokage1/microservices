@@ -10,7 +10,8 @@
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>customer</module>
-      <module>fraud</module>
+    <module>fraud</module>
+    <module>eureka-server</module>
   </modules>
 
   <name>microservices</name>
@@ -21,6 +22,7 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
     <spring.boot.maven.plugin.version>2.5.7</spring.boot.maven.plugin.version>
+    <spring.cloud-version>2020.0.3</spring.cloud-version>
   </properties>
 
   <dependencyManagement>
@@ -31,6 +33,13 @@
         <version>2.5.7</version>
         <scope>import</scope>
         <type>pom</type>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>${spring.cloud-version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>

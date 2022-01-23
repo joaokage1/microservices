@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 public record FraudController(FraudCheckService service) {
 
     @GetMapping(path = "{customerId}")
-    public FraudCheckResponse isFraudster(@PathVariable Integer customerId){
+    public FraudCheckResponse isFraudster(@PathVariable("customerId") Integer customerId){
         log.info("Fraud check request for customer {}", customerId);
         return new FraudCheckResponse(service.isFraudulentCustomer(customerId));
     }

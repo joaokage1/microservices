@@ -12,3 +12,6 @@
 /notification/target/
 /clients/target/
 /apigw/apigw.iml
+/apigw/target/
+/amqp/amqp.iml
+/amqp/target/
